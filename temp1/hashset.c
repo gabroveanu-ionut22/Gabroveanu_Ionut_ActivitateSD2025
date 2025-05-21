@@ -78,19 +78,19 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         if (insert(shipmentSet, shipments[i])) {
-            printf("Adaugat\n", shipments[i]);
+            printf("Adaugat.\n", shipments[i]);
         }
         else {
-            printf("Procesat\n", shipments[i]);
+            printf("Procesat.\n", shipments[i]);
         }
     }
 
     int test_id = 303;
     if (contains(shipmentSet, test_id)) {
-        printf("ID gasit\n", test_id);
+        printf("ID gasit.\n", test_id);
     }
     else {
-        printf("Id-ul nu exista\n", test_id);
+        printf("Id-ul nu exista.\n", test_id);
     }
 
     free_hashset(shipmentSet);
